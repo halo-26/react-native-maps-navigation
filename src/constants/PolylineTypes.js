@@ -17,4 +17,3 @@ export const PENDING = 'PENDING';
  * @type {string}
  */
 export const NEXT = 'NEXT';
-

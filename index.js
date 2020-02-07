@@ -16,26 +16,22 @@ import NavigationModes from './src/constants/NavigationModes';
 
 import Geocoder from './src/modules/Geocoder';
 
-
-
-
-
 /**
  * @exports
  */
 export {
-    DirectionsListView,
-    ManeuverView,
-    ManeuverArrow,
-    ManeuverLabel,
-    DurationDistanceView,
-    DurationDistanceLabel,
-    TravelModeBox,
-    TravelModes,
-    TravelIcons,
-    TravelModeLabel,
-    Geocoder,
-    NavigationModes,
+  DirectionsListView,
+  ManeuverView,
+  ManeuverArrow,
+  ManeuverLabel,
+  DurationDistanceView,
+  DurationDistanceLabel,
+  TravelModeBox,
+  TravelModes,
+  TravelIcons,
+  TravelModeLabel,
+  Geocoder,
+  NavigationModes
 };
 
 /**
