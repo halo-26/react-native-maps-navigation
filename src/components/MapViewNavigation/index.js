@@ -24,6 +24,7 @@ import RoutePolyline from '../RoutePolyline';
 import PositionMarker from '../PositionMarker';
 import { POSITION_ARROW } from '../../constants/MarkerTypes';
 import { Circle, Polygon, Polyline } from 'react-native-maps';
+import geolocation from 'react-native-geolocation-service';
 
 /**
  * @component
@@ -135,7 +136,7 @@ export default class MapViewNavigation extends Component {
    * @componentDidMount
    */
   componentDidMount() {
-    this.watchId = navigator.geolocation.watchPosition(position => {
+    this.watchId = geolocation.watchPosition(position => {
       this.setPosition(position.coords);
     });
   }
@@ -144,7 +145,7 @@ export default class MapViewNavigation extends Component {
    * @componentWillUnmount
    */
   componentWillUnmount() {
-    navigator.geolocation.clearWatch(this.watchId);
+    geolocation.clearWatch(this.watchId);
   }
 
   /**
